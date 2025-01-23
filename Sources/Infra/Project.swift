@@ -13,7 +13,7 @@ struct SwiftCloudDemo: AWSProject {
         let function = AWS.Function(
             "swift-lambda-2",
             targetName: "API",
-            url: .enabled(cors: false)
+            url: .enabled(cors: true)
         )
 
         return Outputs([
